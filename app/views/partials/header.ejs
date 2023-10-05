@@ -1,0 +1,171 @@
+<!-- COMP 229 Assignment 1
+Student Name: Samuel Leung
+Student Number: 301247397
+Due date: October 4, 2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <style>
+        /* Add background color to the navbar */
+        .navbar {
+            background-color: #ffffff;
+        }
+
+        /* Space out the navbar items and remove the bullet points */
+        ul.navbar-nav {
+            list-style: none;
+            display: flex;
+            gap: 20px; /* Adjust the spacing between navbar items */
+            justify-content: flex-end; /* Align items to the right */
+            font-size: 20px;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: #8C8539;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+        footer {
+            background-color: #ffffff;
+            padding: 10px;
+            font-size: medium;
+            color: #73646A;
+            line-height: 0%;
+        }
+        footer .navbar-text {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            display: block;
+            text-align: center;
+            margin-left: auto;  
+            margin-right: auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        h2 {
+            display: block;
+            text-align: left;
+            margin-left: auto;  
+            margin-right: auto;
+            font-size: 16pt;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        nav {
+            color: #73646A;
+            font-size: 16pt;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #projectDesc {
+            font-size: 12pt;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            display: block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #F4F4F4;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-heading {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group label {
+            text-align: left;
+            display: block;
+            font-weight: bold;
+            padding-bottom: 3px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            text-align: left !important;
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: gold;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .form-group button:hover {
+            background-color: rgb(147, 130, 34);
+        }
+    </style>
+</head>
+<body>

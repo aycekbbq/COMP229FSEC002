@@ -1,0 +1,42 @@
+<!-- COMP 229 Assignment 1
+Student Name: Samuel Leung
+Student Number: 301247397
+Due date: October 4, 2023 -->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container" style="width: 980px; margin-left: auto; margin-right: auto;">
+  <div class="jumbotron">
+    <h1 class="display-4" style="text-align: center;font-size: 30pt; color: #73646A; font-family: Arial, Helvetica, sans-serif;">PROJECTS</h1>
+    </div>
+    <h3>Student Website</h3>
+    <p id="projectDesc">
+      During my first semester, I designed a personal website using HTML/CSS, which contains a small description of myself along with linked pages to other projects.
+    </p>
+    <img src="/img/project1.png" alt="Project 1: Student Website" style="width: 980px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 50px;">
+
+    <hr style="border-style: solid; border-color: gold; border-width: 2px; width: 980px;">
+
+    <h3>Image Gallery</h3>
+    <p id="projectDesc">
+      During my second semester, I designed an image gallery that displayed a slideshow that would autoadvance to the next image and loop back to the first image after the last image.
+    </p>
+    <img src="/img/project2.png" alt="Project 2: Image Gallery" style="width: 980px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
+
+    <hr style="border-style: solid; border-color: gold; border-width: 2px; width: 980px;">
+
+    <h3>Bug Smasher</h3>
+    <p id="projectDesc">
+      During my second semester, I also designed a simple browser-based (HTML5 canvas) game where you score points by accurately clicking on the bug. The bug changes position dynamically and the intervals between position changes decrease in correlation with your score.
+    </p>
+    <img src="/img/project3.png" alt="Project 3: Bug Smasher" style="width: 980px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 15px;">
+
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>

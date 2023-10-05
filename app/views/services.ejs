@@ -1,0 +1,51 @@
+<!-- COMP 229 Assignment 1
+Student Name: Samuel Leung
+Student Number: 301247397
+Due date: October 4, 2023 -->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container" style="width: 980px; margin-left: auto; margin-right: auto;">
+  <div class="jumbotron">
+    <h1 class="display-4" style="text-align: center;font-size: 30pt; color: #73646A; font-family: Arial, Helvetica, sans-serif;">SERVICES</h1>
+  </div>
+    <style>
+      .services-image {
+        float: right;
+        margin-left: 20px;
+      }
+    </style>
+    <ul class="services-list">
+      <li>
+        <img src="/img/services.png" alt="Services" class="services-image">
+        <h2>Web Development</h2>
+        </li>
+      <li>
+        <h2>Mobile App Prototyping</h2>
+      </li>
+      <li>
+        <h2>Basic Software Development</h2>
+      </li>
+      <li>
+        <h2>Coding Assistance and Tutoring</h2>
+      </li>
+      <li>
+        <h2>Code Review and Testing</h2>
+      </li>
+      <li>
+        <h2>Database Management</h2>
+      </li>
+      <li>
+        <h2>IT Support</h2>
+      </li>
+    </ul>
+
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>

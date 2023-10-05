@@ -1,0 +1,56 @@
+<!-- COMP 229 Assignment 1
+Student Name: Samuel Leung
+Student Number: 301247397
+Due date: October 4, 2023 -->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container" style="width: 980px; margin-left: auto; margin-right: auto;">
+  <div class="jumbotron">
+    <h1 class="display-4" style="text-align: center;font-size: 30pt; color: #73646A; font-family: Arial, Helvetica, sans-serif;">CONTACT ME</h1>
+  </div>
+  <div class="contact-container">
+    <div class="contact-info">
+      <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong>Email:</strong> sleun117@my.centennialcollege.ca</p>
+      <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong>Phone Number:</strong> (647) 869-0659</p>
+      <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong>Address:</strong> 73 Carrera Blvd, Scaborough ON, M1P 5C4</p>
+    </div>
+    <div class="contact-form">
+      <form action="submit.php" method="post">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form-group">
+          <label for="contactNumber">Contact Number</label>
+          <input type="text" id="contactNumber" name="contactNumber" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  
+  </div>
+    
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
